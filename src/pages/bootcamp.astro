@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Module from '../components/Module.astro';
+import Card from '../components/Card.astro';
+import StudentReviews from '../components/StudentReviews.astro';
+import '../styles/style1.css'
+---
+
+<Layout>
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<ul class="list">
+    <li><a href=""> <i class="fa-solid fa-code"></i> The schedule</a></li>
+    <li><a href=""><i class="fa-regular fa-user"></i> Testimonials</a></li>
+    <li><a href=""><i class="fa-regular fa-circle-question"></i>FAQ</a></li>
+</ul>
+</Layout>
+<Layout>
+<div class="header">
+    <h1 class="web"> The Web Development </h1>
+    <h1 class="boot">BOOTCAMP</h1>
+    <br/>
+    <h1>LEARN HOW TO BUILD THIS WEB APP:</h1>
+</div>
+<br/>
+<img src="/images/plan.png" alt="" height="600px" width="800px" style="height: 800px;width:800px;border-radius: 15px;">
+<br>
+<div class="box">
+    <h1>The bootcamp is a 12-weeks long intensive course focused on learning Web Development.</h1>
+<p>
+<p>It's 100% practice-based. We'll build an awesome project using a fantastic full-stack tech stack: Astro, htmx, Alpine.js, Tailwind CSS, Pocketbase</p>
+<p>Perfect to learn how to code from scratch.</p>
+
+<p>Perfect if you're into Web Dev but you're a bit rusty.</p>
+
+<p>Perfect if you're into another tech niche (mobile, system-level, sysadmin, devops, ...) and you want to transition to Web Development.</p>
+
+<p>Perfect to learn how to create your own SaaS.</p>
+
+<p>Fully remote.</p>
+
+<p>This is not "just a course".</p>
+
+
+<p>It's a once-a-year event designed with one goal in mind: </p>
+<p><strong>help you become a Web Developer.</strong></p>
+
+<p>During these 12 intensive weeks, you'll learn the skills you need to build interactive and useful Web Applications.</p></p>
+</div>
+<br>
+<br>
+<div class="signup">
+<center><h1 class="sign">Signups closed</h1></center>
+<br>
+<br>
+<br>
+<p>THE INSTRUCTOR</p>
+<center><h2>Meet the instructor</h2></center>
+<pre>
+ Hello, I am Flavio Copes. You may know me from my blog 
+    flaviocopes.com , my free programming ebooks on 
+thevalleyofcode.com, or my freeCodeCamp contributions. I
+have been organizing this Bootcamp every year since 2020. I
+am 39 years old, Italian. I graduated in computer engineering
+from Politecnico di Milano in 2008. My passion for computers
+dates back to the 1980s. I have been a Linux fan since 1998, a
+Mac enthusiast since 2005, bought my first JavaScript book in 
+1998, and consider myself a professional JavaScript developer 
+                                        since 2012.
+
+   Just a few words to let you know I'm serious about these 
+                                            things.
+
+       My mission is to help you become a Web Developer.
+</pre>
+<br>
+<br>
+
+</div>
+<div class="schedule">
+    <br>
+    <br>
+    <center><h1>THE SCHEDULE</h1></center>
+    <p>Each week we'll unlock a new module</p>
+    <Module
+        title="MODULE 1"
+        body="In this module we define and plan our application, understanding the problem, the architecture we'll need, the tech choices. We'll introduce and install PocketBase locally, and we'll start doing some initial data modeling for our app, creating collections.        "
+    />
+    <Module
+        title="MODULE 2"
+        body="We'll introduce Astro, we'll create our Astro-based website, with a Git repository so we can easily track progress. We'll then create our homepage, blog, etc, for the site part. We'll use Tailwind to build a layout that is responsive and handles dark and bright mode. We'll learn how to use Astro components to compose the HTML, server side, using JavaScript imports. We'll also learn how to create dynamic routes and how to use content collections to build the product blog. Finally we'll push the site to GitHub. "
+    />
+    <Module
+        title="MODULE 3"
+        body="In module 3 we'll start working on the app part of our SaaS. We'll create a dashboard and we'll start fetching data from PocketBase and we'll show it in the app. We'll add a way to create a new project using a modal window. We'll introduce htmx and Alpine.js and I'll show you how to use them to perform actions and make our app dynamic. We'll let people add a task to the project, and we'll list the projects tasks.        "
+    />
+    <Module
+        title="MODULE 4"
+        body="In module 4 we'll first add a sidebar that lists all projects, with a hamburger menu to show it on mobile too. We'll use htmx's `hx-boost` feature to make the app feel faster. Then we'll add a way to mark tasks as done, edit the project status, edit the project's name, and edit the task text. We'll also add a way to delete a project and a task. We'll add the ability to star a task, and we'll then show starred tasks coming form all projects in the dashboard. "
+    />
+    <Module
+        title="MODULE 5"
+        body="In module 5 we'll introduce authentication to our app. We'll protect all routes that require auth, and we'll start creating user-specific data. All projects, tasks, etc, will be associated with a user. We'll also add forms to sign up and sign in, and reset the password. We'll let people logout too. We'll add form protection using Cloudflare Turnstile..        "
+    />
+    <Module
+        title="MODULE 6"
+        body="In module 6 we'll make it possible to upload images to a task via drag and drop, and we'll let users delete them too. We'll also take care of security across our app, talk about XSS, introduce a Content Security Policy. We'll then introduce some error handling across our requests..        "
+    />
+    <Module
+        title="MODULE 7"
+        body="In module 7 we'll handle showing starred tasks before non-starred ones from PocketBase, we'll handle resource not found issues, we'll see how to handle htmx connection errors, we'll add some more security checks by setting htmx to only allow requests to our domain and using the correct headers and origin to prevent possible abuse.        "
+    />
+    <Module
+        title="MODULE 8"
+        body="In module 8 we'll create teams. We'll create the teams collection in PocketBase, show a form to let people create a team, we'll show teams in the sidebar, we'll allow people to activate a team by paying the subscription on Stripe, we'll add projects to the team, list team projects, list starred team tasks, we'll also list team projects in the sidebar, and do some work on the sidebar to highlight the active project and team.        "
+    />
+    <Module
+        title="MODULE 9"
+        body="In module 9 we'll keep working on teams. We'll add invites, we'll list team members,s we'll handle accepting/rejecting invites, we'll send emails through PocketBase, we'll handle changing a team name, subscription cancellation, we'll freeze the projects if people stop paying, and we'll add a link to manage the subscription on Stripe to update payment method. We'll also handle team deletion and clearing the data.       "
+    />
+    <Module
+    title="MODULE 10"
+    body="In module 10 we'll create an activity page where people can see what happened in their projects, and we'll create a team dashboard where people can see what happened in their team projects at a glance. We'll add a way for people to change their username, and in the filters list we will add a way to filter by user, by team, by project. We also show tasks done today in the personal/team dashboard, we'll do some optimizations and we'll add a service worker to show a offline splash screen. We'll also allow the app to be installed as PWA.      "
+    />
+    <Module
+    title="MODULE 11"
+    body="In module 11 we'll take care of caching and performance. We'll prevent 2 roundtrips with HX-Redirect, we'll optimize creating a project and task, we'll prevent double click of the buttons, we'll cache modals, we'll cache assets, we'll add loading spinners.      "
+    />
+    <Module
+    title="MODULE 12"
+    body="Module 12 is about deployment. We'll deploy our app to Railway using Docker, and we'll handle all we need to go from local dev mode to production. "
+    />
+</div>
+<div class="modes">
+    <center><h1>How the app looks like, dark and light mode</h1></center>
+    <img src="https://bootcamp.dev/screen-1.jpg" alt="image not found(please check your internet connection" height="300px" width="600px">
+    <img src="https://bootcamp.dev/screen-2.jpg" alt="image not found(please check your internet connection" height="300px" width="600px">
+    <img src="https://bootcamp.dev/screen-3.jpg" alt="image not found(please check your internet connection" width="900px" height="1560px">
+</div>
+<div class="app">
+    <center><h1>Did I say the app we'll build looks great as a PWA on a phone/tablet?</h1></center>
+    <img src="https://bootcamp.dev/ipad.jpg" alt="image not found(please check your internet connection"  width="600px" style="width: 600px; height:300px;">
+    <img src="https://bootcamp.dev/iphone.jpg" alt="image not found(please check your internet connection"  width="600px" style="width: 600px;height:300px">
+    
+</div>
+<div class="student-output">
+    <center><h1>Hear what students say</h1></center>
+    <div class="student-review">
+    <StudentReviews
+        name="Victor Campos"
+        review="“The web development bootcamp was a game changer for me. It teached me how to develop modern web applications using the best practices, I recommend it 100%!!!”"
+    />
+    <StudentReviews
+        name="Ivan Zulfikar"
+        review="“I can’t recommend enough this course for self learner developer. It gives me the bird eye view of current technology and lots of portfolio projects. But my most valuable takeaway from this course is the newbie learning community that learns together with you. For me, this course boost my confidence to apply for dev jobs, and alhamdulillah, 1 month later I got a full time job as developer.”"
+    />
+    <StudentReviews
+        name="Brad Alexander"
+        review="“This course was a game changer for me. the more regimented coursework made me realize I had to grind harder if I wanted to make it. It's also teaches you a wide range of skills, vs udemy courses where you'll learn 5 skill sets maybe at most. Here you'll learn 20+ (probably more). I already feel like I've learned 20x what I could have found on my own. Thanks Flavio!”"
+    />
+    <StudentReviews
+        name="Geoff Hollingworth"
+        review="“Flavio offers a personal feeling bootcamp course that allows you to interact with him and 50+ fellow course participants using discord and great online courses. If you can 'do JavaScript' but want to go the next level I highly recommend joining where you can work at your own pace but take part with many others for support. Come increase the fun!”"
+    />
+    <StudentReviews
+        name="Pete Roobol"
+        review="“I am really enjoying Flavio's course, there are so many nuggets of wisdom in there. To have such a vast range of smooth flowing and consistent Javascript learning material in one place is a pleasure- thank you Flavio!!”"
+    />
+    <StudentReviews
+        name="Farkas Attila"
+        review="“I learned the most valuable lessons in practice, theory, and execution. The bootcamp gives a well defined curriculum including projects and examples. The text based style is just exponentially great and Flavio is always there to help out!”"
+    />
+    <StudentReviews
+        name="Ayu Adiati"
+        review="“Finally I found an affordable & flexible ONLINE bootcamp where I can manage my time between learning and my family. Fellow students who always help each other & with Flavio himself actively engages with what student needs help me enormously in my learning journey!”"
+    />
+    <StudentReviews
+        name="Anna Kalil"
+        review="“This course is much more satisfying than General Assembly's JavaScript Development class. Flavio gets into the nitty gritty of how things work and why they work that way. I'm a QA Engineer at a tech startup and I'm learning a lot about the tools that my Engineering team already uses and I think it's helping me to be better at my job. I also really appreciate that you can work on this course at your own pace.”"
+    />
+    <StudentReviews
+        name="Tom Phillips"
+        review="“I just wanted to share what a great experience I am having in this bootcamp. I was so nervous to sign up for this, but after a month, I am getting to know some great people from all over who share my enthusiasm for building web apps. In a short time I have already learned a LOT. I love Tailwind CSS, and now that we are beginning the JavaScript portion of the bootcamp, I am even more excited than I was before the class started. Honestly, this has been one of the best decisions I have made. Thanks for all of your efforts to lift us up as pro developers and for giving me a break on the tuition. It is worth every penny and then some!”"
+    />
+    <StudentReviews
+        name="Christian Halvorsen"
+        review="“I started learning programming a couple of months before the bootcamp started, and it felt overwhelming to figure out how I should approach it. I tried using other tutorials, but the ones I found were mostly video-based and I found it hard to follow, especially since I am a beginner. However, this bootcamp is text based, and I find it much more enjoyable to be able to go back and read the material again, I feel I am absorbing the information in a different way. Also, the bootcamp has given me a good structure for learning all the topics that are necessary to become a full stack developer, which would have taken me a very long time to figure out on my own. In addition, the discord community is very friendly, and I have found lots of help and information from the chat.”"
+    />
+    <StudentReviews
+        name="Gedrie"
+        review="“I had some background in learning this programming language, but this course offered so much more insight into all things that happens behind the scenes! I fell a little bit more confident, that I will be able to prosper my future career with JavaScript.”"
+    />
+    <StudentReviews
+        name="Lamberto Asghedom"
+        review="“The JS Bootcamp is an excellent resource for anybody looking to improve. I still use this course as a primary resource for gaps in JS knowledge. Highly recommend you give this course a try!”"
+    />
+    <StudentReviews
+        name="Aurore Knapic"
+        review="“It's great to be part of the JS Bootcamp, learning new things with the friendly Discord community. A nice thing about Flavio's course is that the theory is written in small fun blocks with some practical projects on the side so it allows you to follow it easily.”"
+    />
+    <StudentReviews
+    name="Aurore Knapic"
+    review="“It's great to be part of the JS Bootcamp, learning new things with the friendly Discord community. A nice thing about Flavio's course is that the theory is written in small fun blocks with some practical projects on the side so it allows you to follow it easily.”"
+    />
+    <StudentReviews
+    name="Corey Gwin"
+    review="“Flavio's lessons get you building real things right away. The variety of projects you'll build will serve as great examples for building your own products. He uses the latest libraries, tech and tools to get you up and running in no time.”"
+    />
+    <StudentReviews
+    name="Khanh Mai"
+    review="“I've learnt a lot from Flavio's React.js, Node.js related courses, since my current job tech stack is using javascript a lot. The challenges in the end of each lesson are interesting as well. I do agree with Flavio as his courses format are not videos. So I can reference anytime I want to remind myself anything.”"
+    /><StudentReviews
+    name="Giandomenico Riceputi"
+    review="“Flavio is a great developer with the humility to show his process in development; instead of showing only the perfect 'Ciak'. This translates into a real lesson where you can learn the mindset, the approach you face, the theory but you come home with much more. Becoming a programmer is hard, Flavio is teaching me a serious and profitable approach to becoming a good developer with real projects.”"
+    /><StudentReviews
+    name="Joan Henry"
+    review="“Flavio's courses are a great resource that you can reference from time-time when you get stuck. They are well-organized & follow a flow that will make understanding them easier as you go on plus you get to actually build something while learning.”"
+    /><StudentReviews
+    name="Francisco Intriago"
+    review="“The course has been very good. I learned a lot and it got me thinking about what I have to work on and improve. I found the content and pace of the workshop excellent, I like the format. This was the first time I was involved in webinar training, and it has been a great learning experience, there are so many little things to know and learn one couldn’t possibly learn it on their own, and that’s where Flavio and the JS Bootcamp really make the difference. Also, I found it to be a very good webinar for new-comers to the web world. The information provided will prove to be very useful in practice.”"
+    /><StudentReviews
+    name="Illia Laziuk"
+    review="“Hi everyone. My name is Illia, I am from Belarus, little country in the middle of the Europe. I am a second year student now. And I want to tell you about my expressions about The JS Bootcamp. It was really awesome. I found this course at the end of May and understood, that is what I really want to learn in the summer, while I was on vacation. I don’t know English very well, and this course was really good to learn it with Flavio. You should be very hardworking to finish that course, because there are a lot of new information, and you need to understand it in a little period of time. At the and or this course you can try to find work, because now you know all concepts of JS, and it is enough to be JS developer.”"
+    /><StudentReviews
+    name="Mirjana Tomic"
+    review="“The JS Bootcamp is in a written form and available forever which is great. You can always go back and refresh your memory, and you will since it's so full of information, tips and tricks - the curriculum is huge! I am a junior front end for about a year and a half now and yet I found so many details in the course materials that I never learned in a proper way before. Also finally learned and understood the bigger picture of frontend development, not just HTML, CSS and JavaScript but all other things that come into play like npm, webpack, babel, networking, and many other concepts that are missing from most courses I took in the past. Pair that with a very, very low price, multiple discount options, very friendly and helpful instructor Flavio and you have a great deal. Community is also just the right size, not too big, not too small, someone is always there to help you move through curriculum. Flavio also leaves no questions / requests unanswered. ”"
+    />
+    <StudentReviews
+    name="Marco Kuprat"
+    review="“I have learnt a lot and really could expand my knowledge. One of the main things I learned: there's so much more you can do with JavaScript today compared to 12 years ago, so it is inevitable to stay up to date. This bootcamp is the right place, because you get information that starts from zero up to advanced modern topics. And the Discord chat gives you the opportunity to discuss with the other participants in order to seek for and provide help or just to chat. I can recommend the JavaScript Bootcamp to everyone who is involved in web development!”"
+    />
+    <StudentReviews
+    name="Dominique M."
+    review="“I love Flavio's courses, and reference books also, because they are very different from other resources. It feels like you are doing some peer programming with a more experienced colleague and friend who takes great care of your understanding and rapid implementation of what is covered. It is also great if you want to ramp up rapidly on ReactJS, and discover new things like Netlify, MACH, and JAMstack. Thank you, Flavio for putting your learning materials together.”"
+    />
+    <StudentReviews
+    name="Miguel mvqdev"
+    review="“Flavio’s Boot Camp gave me the directions, resources and knowledge on how to achieve a next level Web Development. The project based curriculum is the best way to quickly put in practice the lessons and move them to your own projects. It gives and explains all the foundations you need. And to go a step further, you will always have an active discord community that grows around the boot camp”"
+    />
+    </div>
+</div>
+<div class="article">
+    <article>
+        d
+    </article>
+</div>
+</body>
+</Layout>
