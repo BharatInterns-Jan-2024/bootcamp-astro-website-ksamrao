@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Astro Starter Kit: Basics
 
 ```sh
@@ -52,3 +53,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+=======
+# bootcamp-astro-website-ksamrao
+this is website replica of bootcamp which is based on the astro framework
+>>>>>>> 6518b6c39d5ce129ab7fc23c8da45d798061016a
