@@ -8,6 +8,10 @@ ul {
     padding: 5px;
     display:flex;
     flex-direction:row;
+    padding-top: 40px;
+    align-items: center;
+    font-size: 15px;
+    gap: 15px;
   }
 *{
   margin: 0px;
@@ -46,16 +50,18 @@ body{
   .web{
     font-size: 40px;
     color: var(--gray-color);
+    color: #b0adad;
   }
   .boot{
-    font-size:80px;
+    font-size:100px;
   }
   .header img{
     border-radius: 25px;
   }
-  .box{
-    width: 600px;
-    padding: 60px;
+  body .box{
+    width: 510px;
+    padding: 80px;
+    text-align: left;
     background-color: var(--gray-color);
   }
   .box p{
@@ -64,7 +70,7 @@ body{
   div p{
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: left;
   }
   pre{
     font-family: Arial, Helvetica, sans-serif;
@@ -94,7 +100,17 @@ body{
   .student-output{
     margin: 20px 0px;
     padding: 10px;
-
+  }
+  header{
+    color: white;
+  }
+  .faqs-section{
+    margin: 20px 0px;
+    padding: 10px;
+  }
+  .faq{
+    display: flex;
+  flex-wrap: wrap;
   }
   .student-review{
     display: flex;
@@ -184,4 +200,14 @@ border-bottom:1px solid var(--sections-border);
 .reply{
   background-color: rgba(21, 110, 193, 0.783);
   border-radius: 50%;
+}
+.replies button{
+  width: 500px;
+  height: fit-content;
+  border: 1px solid var(--sections-border);
+  padding: 5px ;
+  border-radius: 15px;
+  justify-content: center;
+  background-color: #052a526c;
+  color: rgba(40, 122, 228, 0.76);
 }

@@ -1,22 +1,23 @@
 ---
 interface Props {
-	review: string;
-	name: string;
+	title: string;
+	body: string;
 }
 
-const { review, name } = Astro.props;
+const { title, body } = Astro.props;
 ---
 
-<li class="review">
+<li class="faqs">
+		<h2>
+			{title}
+		</h2>
 		<p>
-			{review}
-        </p>
-		<br>
-		 <b>{name}</b>
+			{body}
+		</p>
 	</a>
 </li>
 <style>
-	.review {
+	.faqs {
 		list-style: none;
 		display: flex;
         flex-direction:column;
@@ -30,7 +31,6 @@ const { review, name } = Astro.props;
 		border-radius: 15px;
 		background-position: 100%;
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		
 	}
 	h2 {
 		margin: 0;
@@ -40,10 +40,18 @@ const { review, name } = Astro.props;
 	p {
 		margin-top: 0.5rem;
 		margin-bottom: 0;
-        font-size: 20px;
+        font-size: 21px;
 		color: #f1ededc9;
+		
 	}
-	.review:hover{
-		background-color: #54575d86;
+	.faqs:hover{
+	background-color: #54575d86;
+	}
+	.link-card:is(:hover, :focus-within) {
+		background-position: 0;
+		background-image: var(--accent-gradient);
+	}
+	.link-card:is(:hover, :focus-within) h2 {
+		color: rgb(var(--accent-light));
 	}
 </style>
